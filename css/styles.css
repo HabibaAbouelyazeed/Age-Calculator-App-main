@@ -1,0 +1,116 @@
+
+:root{
+    --purple: hsl(259, 100%, 65%);
+    --lightRed: hsl(0, 100%, 67%);
+    --white: hsl(0, 0%, 100%);
+    --offWhite: hsl(0, 0%, 94%);
+    --lightGrey: hsl(0, 0%, 86%);
+    --smokeyGrey: hsl(0, 1%, 44%);
+    --offBlack: hsl(0, 0%, 8%);
+}
+
+@media only screen and (max-width: 1600px) {
+    html{
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    html{
+        font-size: 10px;
+    }
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--offWhite);
+}
+
+.card{
+    border: none;
+}
+
+.card .card-content  {
+    border-radius: 1rem;
+    border-bottom-right-radius: 10rem;
+    background-color: var(--white);
+}
+
+/* Input Section ==>START */
+.dateInput{
+    color: var(--smokeyGrey);
+}
+
+.dateInput::after{
+    content: '';
+    position: absolute;
+    width: 90%;
+    height: 1px;
+    bottom: 0;
+    left: 0.6rem;
+    opacity: 0.5;
+    background-color: var(--smokeyGrey);
+}
+
+.dateInput label{
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+.dateInput input{
+    /* height: 3rem; */
+    font-size: x-large;
+}
+
+.dateInput input:hover{
+    border-color: var(--purple);
+}
+
+.dateInput input::placeholder{
+    font-weight: bold;
+    color: var(--smokeyGrey);
+    opacity: 0.9;
+}
+
+.dateInput button[type='submit']{
+    width: 4rem;
+    height: 4rem;
+    padding: 1rem;
+    bottom: -2rem;
+    right: 1rem;
+    z-index: 100;
+    background-color: var(--purple);
+}
+
+.dateInput button[type='submit']:hover{
+    background-color: var(--offBlack);
+}
+
+@media only screen and (max-width: 767px) {
+    .dateInput button[type='submit']{
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+/* Input Section ==>END */
+
+/* Date Section ==>START */
+.card .date{
+    font-size: 5rem;
+}
+
+.card .date .result-number{
+    color: var(--purple);
+    letter-spacing: 1rem;
+}
+
+
+/* Date Section ==>END */

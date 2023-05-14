@@ -6,6 +6,12 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;0,800;1,400;1,800&family=Roboto:wght@100;300;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  
   <title>Frontend Mentor | Age calculator app</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -16,22 +22,65 @@
 </head>
 <body>
 
-  Day
-  DD
+  <div class="card mt-5 mb-5 bg-transparent">
+    <div class="container mt-5">
+      <div class="row justify-content-center align-items-center">
+        <div class="card-content col-11 col-md-8 p-5">
 
-  Month
-  MM
+          <form class="row dateInput pb-4 mb-5 position-relative">
+            <div class="col-4 col-md-3 mb-5 mb-md-2 ">
+              <label for="inputDay" class="form-label text-uppercase">Day</label>
+              <input type="number" class="form-control fs-2 fw-bold" id="inputDay" placeholder="DD">
+            </div>
+            <div class="col-4 col-md-3 mb-5 mb-md-2 ">
+              <label for="inputMonth" class="form-label text-uppercase">Month</label>
+              <input type="number" class="form-control fs-2 fw-bold" id="inputMonth" placeholder="MM">
+            </div>
+            <div class="col-4 col-md-3 mb-5 mb-md-2 ">
+              <label for="inputYear" class="form-label text-uppercase">Year</label>
+              <input type="number" class="form-control fs-2 fw-bold" id="inputYear" placeholder="YYYY">
+            </div>
+    
+            <button type="submit" class="btn position-absolute align-items-center rounded-circle">
+              <img src="assets/images/icon-arrow.svg" class="img-fluid" alt="submit">
+            </button>
+          </form>
+          
 
-  Year
-  YYYY
-
-  -- years
-  -- months
-  -- days
+          <div class="row outputDate">
+            <div class="col-12 text-start">
+              <div class="date years d-flex gap-2 align-items-center fw-bolder fst-italic">
+                <p class="result-number">--</p>
+                <p class="date-cat">years</p>
+              </div>
+            </div>
+            <div class="col-12 text-start">
+              <div class="date months d-flex gap-2 align-items-center fw-bolder fst-italic">
+                <p class="result-number">--</p>
+                <p class="date-cat">months</p>
+              </div>
+            </div>
+            <div class="col-12 text-start">
+              <div class="date days d-flex gap-2 align-items-center fw-bolder fst-italic">
+                <p class="result-number">--</p>
+                <p class="date-cat">days</p>
+              </div>
+            </div>
+          </div>
   
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>  
+
+
+<div class="attribution">
+  Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+  Coded by <a href="#">Habiba Abouelyazeed</a>.
+</div>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>
