@@ -6,8 +6,9 @@ This is a solution to the [Age calculator app challenge on Frontend Mentor](http
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
   - [Links](#links)
+  - [Screenshot](#screenshot)
+
 - [My process](#my-process)
   - [Built with](#built-with)
 - [Author](#author)
@@ -31,17 +32,19 @@ Users should be able to:
 - See hover and focus states for all interactive elements on the page
 - **Bonus**: See the age numbers animate to their final number when the form is submitted
 
+
+### Links
+
+- Solution URL: https://www.frontendmentor.io/solutions/age-calculator-app-vanilla-js-4wTUGXwcrl
+- Live Site URL: https://habibaabouelyazeed.github.io/Age-Calculator-App-main/
+
+
 ### Screenshot
 
 ![](/screenshots/Screenshot1.PNG)
 ![](/screenshots/Screenshot2.PNG)
 ![](/screenshots/Screenshot3.PNG)
 
-
-### Links
-
-- Solution URL: https://www.frontendmentor.io/solutions/age-calculator-app-vanilla-js-4wTUGXwcrl
-- Live Site URL: https://habibaabouelyazeed.github.io/Age-Calculator-App-main/
 
 ## My process
 
