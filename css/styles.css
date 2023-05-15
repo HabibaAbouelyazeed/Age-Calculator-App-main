@@ -79,6 +79,10 @@ input[type=number]::-webkit-outer-spin-button {
     opacity: 0.9;
 }
 
+.dateInput .error-msg{
+    color: var(--lightRed);
+}
+
 .dateInput button[type='submit']{
     width: 4rem;
     height: 4rem;
@@ -114,3 +118,12 @@ input[type=number]::-webkit-outer-spin-button {
 
 
 /* Date Section ==>END */
+
+
+.errorText{
+    color: var(--lightRed);
+}
+
+.errorBorder{
+    border-color: var(--lightRed);
+}

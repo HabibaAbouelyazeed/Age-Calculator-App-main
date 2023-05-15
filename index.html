@@ -26,19 +26,22 @@
     <div class="container mt-5">
       <div class="row justify-content-center align-items-center">
         <div class="card-content col-11 col-md-8 p-5">
-
+          <!-- Input Form -->
           <form class="row dateInput pb-4 mb-5 position-relative">
             <div class="col-4 col-md-3 mb-5 mb-md-2 ">
               <label for="inputDay" class="form-label text-uppercase">Day</label>
-              <input type="number" class="form-control fs-2 fw-bold" id="inputDay" placeholder="DD">
+              <input type="number" class="form-control fs-2 fw-bold" id="inputDay" placeholder="DD" required>
+              <p class="error-msg fs-6 fw-light fst-italic"></p>
             </div>
             <div class="col-4 col-md-3 mb-5 mb-md-2 ">
               <label for="inputMonth" class="form-label text-uppercase">Month</label>
-              <input type="number" class="form-control fs-2 fw-bold" id="inputMonth" placeholder="MM">
+              <input type="number" class="form-control fs-2 fw-bold" id="inputMonth" placeholder="MM" required>
+              <p class="error-msg fs-6 fw-light fst-italic"></p>
             </div>
             <div class="col-4 col-md-3 mb-5 mb-md-2 ">
               <label for="inputYear" class="form-label text-uppercase">Year</label>
-              <input type="number" class="form-control fs-2 fw-bold" id="inputYear" placeholder="YYYY">
+              <input type="number" class="form-control fs-2 fw-bold" id="inputYear" placeholder="YYYY" required>
+              <p class="error-msg fs-6 fw-light fst-italic"></p>
             </div>
     
             <button type="submit" class="btn position-absolute align-items-center rounded-circle">
@@ -46,7 +49,7 @@
             </button>
           </form>
           
-
+          <!-- Output result -->
           <div class="row outputDate">
             <div class="col-12 text-start">
               <div class="date years d-flex gap-2 align-items-center fw-bolder fst-italic">
