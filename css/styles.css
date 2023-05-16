@@ -24,6 +24,9 @@
 body{
     font-family: 'Poppins', sans-serif;
     background-color: var(--offWhite);
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
 }
 
 .card{
@@ -83,10 +86,10 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .dateInput button[type='submit']{
-    width: 4rem;
-    height: 4rem;
+    width: 5rem;
+    height: 5rem;
     padding: 1rem;
-    bottom: -2rem;
+    bottom: calc(-0.5* 5rem);
     right: 1rem;
     z-index: 100;
     background-color: var(--purple);

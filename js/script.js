@@ -47,7 +47,7 @@ let DAYS_IN_MONTH = [
 submitBtn.addEventListener('click', function(e){
     //Stop form refreshing page on submit
     e.preventDefault();
-    
+    let counter;
     let flag = validateForm(inputDateArray);
     console.log(flag);
     if(flag == 0){
@@ -72,10 +72,11 @@ submitBtn.addEventListener('click', function(e){
 
     let [yearsDiff, monthsDiff, daysDiff] = calcAge(date, birthdate);
 
-    resultYearParag.innerHTML = yearsDiff;
-    resultMonthsParag.innerHTML  = monthsDiff;
-    resultdaysParag.innerHTML  = daysDiff;
 
+    //animate result counter
+    countTo(resultYearParag, yearsDiff);
+    countTo(resultMonthsParag, monthsDiff);
+    countTo(resultdaysParag, daysDiff);
 
     //remove error color
     inputDateArray.forEach(element =>{
@@ -193,4 +194,22 @@ function calcAge(current, birth){
 
    //return format => [years,months,days]
     return [yearsDiff, monthsDiff, daysDiff];
+}
+
+
+//animate counter from 0 to num
+function countTo(element, endNum){
+    let startNum = 0;
+    let interval = 50;
+    if(startNum == endNum){
+        return endNum;
+    }
+
+    let counter = setInterval(() => {
+        startNum += 1;
+        element.innerHTML = startNum;
+        if(startNum == endNum){
+            clearInterval(counter)
+        }
+    }, interval);
 }
